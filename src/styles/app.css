@@ -1,5 +1,5 @@
 body{
-    background-color: #2C2C2C;
+    background-color: #27262c;
 }
 .filterList{
     width: 90%;
@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
     & > * + * {
         margin-left: 100px;
     }

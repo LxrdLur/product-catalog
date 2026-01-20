@@ -11,9 +11,6 @@ const ProductCard = ({product}) => {
                 <h3>Название: {product.title}</h3>
                 <p>Описание: {product.desc}</p>
             </div>
-            <div className={style.productCard__price}>
-                <p>Цена: {product.price}</p>
-            </div>
         </div>
     );
 };
