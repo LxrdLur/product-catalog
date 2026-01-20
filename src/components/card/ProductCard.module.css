@@ -13,24 +13,99 @@
         object-fit: cover;
         border-radius: 10px 0 0 10px;
     }
-    h3{
-        font-size: 20px;
-    }
-    p{
-        font-size: 18px;
-    }
+
+    font-size: 18px;
 }
 .productCard__text{
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
     font-family: "Google Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "GRAD" 0;
-    padding: 20px;
+
+}
+.productCard__textWrapp{
+    h3{
+       transition: 0.2s ease;
+    }
+    h3:hover{
+        color: var(--color-green);
+        cursor: pointer;
+    }
     *+*{
         margin-top: 15px;
     }
+}
+.productCard__textBottom{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
 
+}
+.productCard__tags{
+    display: flex;
+    column-gap: 15px;
+    button{
+        position: relative;
+        height: 30px;
+        padding: 0 10px 0 30px;
+        color: #fff;
+        border-radius: 5px 10px 10px 5px;
+        background-color: var(--color-green);
+        &::before{
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 9px;
+            width: 13px;
+            height: 13px;
+            background-color: #27262c;
+            border-radius: 50%;
+        }
+    }
+}
+.productCard__price{
+    font-size: 30px;
+    color: var(--color-green);
+    letter-spacing: 1.5px;
+    display: flex;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding: 0 5px;
+    border-radius: 10px;
+    svg{
+        transition: 0.3s ease-in;
+        padding-left: 5px;
+        border-radius: 5px 0 0 5px;
+    }
+    p{
+        padding: 0 5px 0 10px;
+        position: relative;
+        border: 1px solid transparent;
+        transition: 0.2s ease-in;
+        border-radius: 0 5px 5px 0;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 2px;
+            height: 25px;
+            background-color: #fff;
+            transition: 0.3s ease-in;
+        }
+    }
+}
+.productCard__price:hover > svg{
+    background-color: var(--color-green);
+    stroke: white;
+}
+.productCard__price:hover > p{
+    border: 1px solid #fff;
+}
+.productCard__price:hover > p::after{
+    background-color: transparent;
 }
