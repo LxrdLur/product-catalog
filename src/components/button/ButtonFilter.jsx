@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './ButtonFilter.module.css';
 
-const ButtonFilter = ({children}) => {
+const ButtonFilter = ({children, ...buttonProps}) => {
     return (
-        <button className={style.buttonFilter}>
+        <button {...buttonProps} className={style.buttonFilter}>
             {children}
         </button>
     );

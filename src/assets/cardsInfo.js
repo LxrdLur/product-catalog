@@ -6,15 +6,13 @@ export const products = [
         tags: ['Видеокарта','MSI'],
         img: 'gtx1660.jpg'},
 
-
     {
         id: 2, price: 9999, type: 'Видеокарта',
         title: 'GIGABYTE GeForce RTX 4090 GAMING OC [GV-N4090GAMING OC-24GD 1.1] [PCIe 4.0, GPU 2230 МГц, 24 ГБ GDDR6X, 384 бит, 3 x DisplayPort, HDMI]',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tarchitecto blanditiis dicta dignissimos fugiat minima minus nesciunt placeat porro sint ',
         tags: ['Видеокарта','MSI'],
-        img: 'rtx4090.jpg'
+        img: 'rtx4090.jpg',
     },
-
 
     {
         id: 3, price: 9999, type: 'Видеокарта',
