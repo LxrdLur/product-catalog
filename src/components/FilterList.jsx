@@ -1,9 +1,9 @@
 import React from 'react';
 import ButtonFilter from "@/components/button/ButtonFilter.jsx";
 
-const FilterList = ({filters}) => {
-    const clickSort = (sort) => {
-        console.log(sort)
+const FilterList = ({filters, setSelectedFilter}) => {
+    const clickSort = (selectedFilter) => {
+        setSelectedFilter(selectedFilter)
     }
     return (
         <div className='filterList'>
@@ -11,7 +11,7 @@ const FilterList = ({filters}) => {
                 <ButtonFilter
                     filterName={filter.label}
                     key={filter.value}
-                    onClick={() => clickSort(filter.label)}
+                    onClick={() => clickSort(filter.value)}
                 />
             ))}
         </div>
