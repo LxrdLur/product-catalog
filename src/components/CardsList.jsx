@@ -9,7 +9,7 @@ const CardsList = ({products}) => {
     return (
         <ul className='cardsList'>
             {products.map((product) => (
-                <li>
+                <li key={product.id}>
                     <ProductCard key={product.id} product={product}/>
                 </li>
             ))}

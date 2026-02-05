@@ -1,4 +1,4 @@
-export const products = [
+export const PRODUCTS = [
     {
         id: 1, price: 9999, type: 'Видеокарта',
         title: 'PCI-E MSI GeForce GTX 1660 Ti GAMING X 6144MB 192bit GDDR6 [GTX 1660 TI GAMING X 6G] [PCIe 3.0, GDDR6, 3 x DisplayPort, HDMI]',

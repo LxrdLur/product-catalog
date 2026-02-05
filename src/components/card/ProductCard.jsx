@@ -2,7 +2,7 @@ import React from 'react';
 import style from './ProductCard.module.css';
 import { images } from "@/assets/images";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product = {}}) => {
     const { img, title, type, tags = [], price } = product;
     const srcImage = images[img];
 
@@ -18,7 +18,7 @@ const ProductCard = ({product}) => {
                         {tags.map((tag) => <button key={tag}>{tag} </button>)}
                     </div>
                     <div className={style.productCard__price}>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Trash bin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-label="Trash bin">
                             <path d="M4 7h16"></path>
                             <path d="M10 11v7"></path>
                             <path d="M14 11v7"></path>

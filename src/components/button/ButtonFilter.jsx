@@ -1,10 +1,20 @@
 import React from 'react';
 import style from './ButtonFilter.module.css';
 
-const ButtonFilter = ({children, ...buttonProps}) => {
+const ButtonFilter = (
+    {
+        filterName,
+        onClick,
+        ...buttonProps
+    }
+) => {
     return (
-        <button {...buttonProps} className={style.buttonFilter}>
-            {children}
+        <button
+            {...buttonProps}
+            onClick={onClick}
+            className={style.buttonFilter}
+        >
+            {filterName}
         </button>
     );
 };
