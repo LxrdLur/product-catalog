@@ -1,7 +1,7 @@
 import React from 'react';
 import {FILTERS} from "@/assets/filters.js";
 import {PRODUCTS} from "@/assets/cardsInfo.js";
-import Catalog from "@/components/Catalog.jsx";
+import Catalog from "@/widgets/catalog/UI/Catalog.jsx";
 
 const CatalogPage = () => {
     return (
