@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import FilterList from "@/widgets/FilterList/UI/FilterList.jsx";
 import ProductsList from "@/widgets/ProductsList/UI/ProductsList.jsx";
 import useCatalogProducts from "@/widgets/catalog/model/useCatalogProducts.js";
