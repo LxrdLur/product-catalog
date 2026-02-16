@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './ProductCard.module.css';
-import { images } from "@/assets/images";
+import { images } from "@/assets/images.js";
 
 const ProductCard = ({product = {}}) => {
     const { img, title, type, tags = [], price } = product;

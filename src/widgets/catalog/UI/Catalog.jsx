@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import FilterList from "@/components/FilterList.jsx";
-import CardsList from "@/components/CardsList.jsx";
+import FilterList from "@/widgets/FilterList/UI/FilterList.jsx";
+import ProductsList from "@/widgets/ProductsList/UI/ProductsList.jsx";
 import useCatalogProducts from "@/widgets/catalog/model/useCatalogProducts.js";
 
 const Catalog = ({filters, products}) => {
@@ -17,7 +17,7 @@ const Catalog = ({filters, products}) => {
                 selectedFilter={selectedFilter}
                 setSelectedFilter={setSelectedFilter}
             />
-            <CardsList products={productsAfterSort} />
+            <ProductsList products={productsAfterSort} />
         </div>
     );
 };

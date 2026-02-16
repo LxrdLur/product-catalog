@@ -1,12 +1,14 @@
 import React from 'react';
-import ProductCard from "@/components/card/ProductCard.jsx";
+import ProductCard from "@/entities/product/UI/ProductCard.jsx";
+import ButtonFilter from "@/shared/UI/button/ButtonFilter.jsx";
 
-const CardsList = ({products}) => {
+const ProductsList = ({products}) => {
     const hasProducts = products.length > 0
     if(!hasProducts){
         return <p>Каталог товаров пуст</p>
     }
     return (
+
         <ul className='cardsList'>
             {products.map((product) => (
                 <li key={product.id}>
@@ -17,4 +19,4 @@ const CardsList = ({products}) => {
     );
 };
 
-export default CardsList;
+export default ProductsList;

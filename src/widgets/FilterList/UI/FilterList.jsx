@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonFilter from "@/components/button/ButtonFilter.jsx";
+import ButtonFilter from "@/shared/UI/button/ButtonFilter.jsx";
 
 const FilterList = ({filters, setSelectedFilter}) => {
     const clickSort = (selectedFilter) => {

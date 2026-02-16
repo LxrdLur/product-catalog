@@ -1,6 +1,6 @@
 import React from 'react';
 import {FILTERS} from "@/assets/filters.js";
-import {PRODUCTS} from "@/assets/cardsInfo.js";
+import {PRODUCTS} from "@/entities/product/model/productsConfig.js";
 import Catalog from "@/widgets/catalog/UI/Catalog.jsx";
 
 const CatalogPage = () => {
