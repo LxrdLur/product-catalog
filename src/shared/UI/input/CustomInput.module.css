@@ -1,0 +1,30 @@
+.customInput{
+    width: 1000px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 0 0 20px;
+    transition: 0.3s ease;
+    border: 3px solid transparent;
+    position: relative;
+}
+.customInput:focus{
+    border: 3px solid var(--color-green);
+    box-shadow: unset;
+}
+.customInputWrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.customInputBefore{
+    width: 170px;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background-color: var(--color-green);
+    color: #fff;
+}

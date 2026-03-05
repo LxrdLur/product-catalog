@@ -1,5 +1,5 @@
 // подстрой путь под свою папку, например: '../img/*'
-const modules = import.meta.glob('../shared/assets/img/**/*.{png,jpg,jpeg,webp,svg}', {
+const modules = import.meta.glob('@/shared/assets/img/**/*.{png,jpg,jpeg,webp,svg}', {
     eager: true,
 });
 

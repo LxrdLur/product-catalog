@@ -1,12 +1,12 @@
 import React from 'react';
-import {FILTERS} from "@/assets/filters.js";
+import {SORT_OPTIONS} from "@/features/productSort/modal/sortConfig.js";
 import {PRODUCTS} from "@/entities/product/model/productsConfig.js";
 import Catalog from "@/widgets/catalog/UI/Catalog.jsx";
 
 const CatalogPage = () => {
     return (
         <div>
-            <Catalog filters={FILTERS} products={PRODUCTS}/>
+            <Catalog filters={SORT_OPTIONS} products={PRODUCTS}/>
         </div>
     );
 };

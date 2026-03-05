@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonFilter from "@/shared/UI/button/ButtonFilter.jsx";
 
-const FilterList = ({filters, setSelectedFilter}) => {
+const SortControls = ({filters, setSelectedFilter}) => {
     const clickSort = (selectedFilter) => {
         setSelectedFilter(selectedFilter)
     }
@@ -18,4 +18,4 @@ const FilterList = ({filters, setSelectedFilter}) => {
     );
 };
 
-export default FilterList;
+export default SortControls;
