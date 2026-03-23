@@ -9,10 +9,8 @@ export default function useCatalogProducts(filters, products){
         switch (selectedFilter) {
             case 'asc':
                 return arr.sort((a, b) => a.price - b.price);
-
             case 'desc':
                 return arr.sort((a, b) => b.price - a.price);
-
             default:
                 return arr;
         }
