@@ -1,0 +1,9 @@
+.cartWidget{
+    width: 350px;
+    height: 250px;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
