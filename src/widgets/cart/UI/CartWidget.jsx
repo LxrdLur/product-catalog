@@ -8,7 +8,7 @@ const CartWidget = () => {
     if(hasCartProduct.length > 0){
         return (
             <div className={styles.cartWidget}>
-
+                .....
             </div>
         );
     }else{
