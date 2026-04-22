@@ -1,22 +1,18 @@
-export default function useCart(){
+import {useContext} from "react";
+import {CartContext} from "@/shared/context/cart/CartContext.jsx";
 
-    const addToCart = (product) =>{
-        const cart = JSON.parse(localStorage.getItem('cart')) || []
-        const productItem = cart.some(item => item.id === product.id)
-        const productForCart = {
-            id: product.id,
+export default function useCart(){
+    const {setCart} = useContext(CartContext)
+
+    const addToCart = (product) => {
+        setCart(prev => [...prev, {
+            id: Math.random(),
             title: product.title,
-            price: product.price
-        }
-        if(!productItem){
-            cart.push(productForCart)
-            localStorage.setItem('cart', JSON.stringify(cart))
-        }else{
-            console.log('Товар уже добавлен')
-        }
+            quantity: 1,
+        }])
     }
 
-    return{
+    return {
         addToCart
     }
 }

@@ -16,7 +16,7 @@ export const PRODUCTS = [
 
     {
         id: 3, price: 1, type: 'Видеокарта',
-        title: 'ASUS AMD Radeon RX 7900 XTX TUF GAMING OC Edition [PCIe 4.0, GPU 1900 МГц, 24 ГБ GDDR6, 384 бит, 3 x DisplayPort, HDMI]',
+        title: 'ASUS AMD Radeon RX 7900 XTX TUF GAMING OC Edition',
         desc: '[PCIe 4.0, GPU 1900 МГц, 24 ГБ GDDR6, 384 бит, 3 x DisplayPort, HDMI]',
         tags: ['Видеокарта','MSI'],
         img: 'rx7900.jpg'

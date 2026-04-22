@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './AddToCartButton.module.css';
 import useCart from "@/features/add-to-cart/model/useCart.js";
 
 const AddToCartButton = ({product}) => {
-
-    const {addToCart} = useCart()
+    const {addToCart} = useCart();
 
     return (
         <div className={styles.addToCartButton}>

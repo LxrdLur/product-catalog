@@ -1,0 +1,27 @@
+.cartItemQuantity{
+    width: 20%;
+    height: 50px;
+    border: 1px solid var(--color-green);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+
+    button{
+        width: 33%;
+        height: 50px;
+        transition: 0.3s ease-in;
+        border-radius: 15px 0 0 15px;
+    }
+    /*input{*/
+    /*    width: 33%;*/
+    /*    text-align: center;*/
+    /*}*/
+    .cartItemQuantityPlus{
+        border-radius: 0 15px 15px 0;
+    }
+    button:hover{
+        background-color: var(--color-green);
+    }
+}
