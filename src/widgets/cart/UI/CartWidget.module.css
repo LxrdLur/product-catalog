@@ -8,11 +8,20 @@
     text-align: center;
     padding-top: 10px;
 
-    svg{
+    & > svg{
         width: 40px;
         height: 40px;
         fill: #fff;
         margin-left: 5px;
+        transition: 0.3s ease;
+    }
+    & > svg:hover{
+        fill: var(--color-green);
+    }
+}
+.cartShow{
+    & > svg{
+        fill: var(--color-green);
     }
 }
 .cartCounter{
@@ -20,7 +29,7 @@
 }
 .cartBlock{
     width: 500px;
-    padding: 30px 20px;
+    padding: 30px 20px 20px 20px;
     background-color: #fff;
     border: 2px solid var(--color-green);
     border-radius: 15px;
@@ -28,6 +37,16 @@
     position: relative;
     top: 20px;
     right: 400px;
+}
+.cartItemsList{
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-green);
+}
+.cartIsClear{
+    font-size: 20px;
+    text-align: start;
+    padding-bottom: 15px;
+    color: #757575;
 }
 .cartHide{
     display: none;
@@ -40,10 +59,57 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:last-child{
+        border-bottom: 0;
+    }
 }
 .cartItem + .cartItem{
     margin-top: 20px;
 }
-.cartItemTitle{
+.cartItemText{
     width: 60%;
+    p + p{
+        margin-top: 10px;
+    }
+}
+
+.cartIcon{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.cartTotalPrice{
+    text-align: start;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cartTitle{
+    border-bottom: 1px solid var(--color-green);
+    text-align: start;
+    margin-bottom: 15px;
+
+    h3{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+}
+.cartForwardTo{
+    display: flex;
+    * + *{
+        margin-left: 10px;
+    }
+    p{
+        padding-top: 3px;
+        transition: 0.3s ease;
+    }
+    p:hover{
+        color: var(--color-green);
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+        fill: var(--color-green);
+    }
 }

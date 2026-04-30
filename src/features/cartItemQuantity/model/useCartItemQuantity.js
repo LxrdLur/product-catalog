@@ -9,7 +9,11 @@ export default function useCartItemQuantity () {
         console.log(cartItem.quantity)
     }
     const decreaseQuantity = (cartItem) => {
-        setCart(prev => prev.map(item => item.id === cartItem.id ? {...item, quantity: item.quantity - 1} : item))
+        setCart(prev => prev.map(
+            item => item.id === cartItem.id ? {
+                ...item, quantity: item.quantity - 1
+            } : item).filter(item => item.quantity > 0)
+        )
     }
 
     return {
