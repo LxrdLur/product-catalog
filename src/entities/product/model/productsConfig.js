@@ -13,7 +13,7 @@ export const PRODUCTS = [
         title: 'Logitech G102',
         desc: '[GV-N4090GAMING OC-24GD 1.1] [PCIe 4.0, GPU 2230 МГц, 24 ГБ GDDR6X, 384 бит, 3 x DisplayPort, HDMI]',
         tags: ['Видеокарта','MSI'],
-        img: 'g102',
+        img: 'g102.webp',
         typeForIcon: 'mouse',
     },
 
