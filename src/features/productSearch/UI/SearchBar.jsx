@@ -1,10 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import CustomInput from "@/shared/UI/input/CustomInput.jsx";
+import clsx from "clsx";
+import styles from './SearchBar.module.css';
 
-const SearchBar = ({searchQuery, setSearchQuery}) => {
+const SearchBar = (
+    {
+        searchQuery,
+        setSearchQuery,
+        className,
+        inputClassName,
+    }) => {
+
     return (
-        <div className='sortSearch'>
-            <CustomInput value={searchQuery} onChange={setSearchQuery} />
+        <div className={clsx(styles.sortSearch, className)}>
+            <CustomInput value={searchQuery} onChange={setSearchQuery} className={inputClassName}/>
         </div>
     );
 };

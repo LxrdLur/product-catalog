@@ -2,7 +2,7 @@ import {useContext, useMemo, useState} from "react";
 import {CartContext} from "@/shared/context/cart/CartContext.jsx";
 
 export default function useCartWidget ({product}) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const {cart} = useContext(CartContext)
 
     const showCart = (event) => {

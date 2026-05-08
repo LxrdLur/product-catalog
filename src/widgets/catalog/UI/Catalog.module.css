@@ -1,0 +1,10 @@
+.catalogSearchBar{
+    margin-bottom: 50px;
+}
+.catalogSearchInput{
+    width: 1000px;
+    height: 60px;
+}
+.catalogSortControls{
+    margin-bottom: 100px;
+}
